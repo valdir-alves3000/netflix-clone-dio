@@ -1,0 +1,101 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  font-family: "Arial", Times, serif;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .logo {
+  color: var(--red);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    var(--img);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 20px;
+}
+
+.filme-principal .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.filme-principal .description {
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.filme-principal .btn-group .btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  margin-right: 15px;
+  border: none;
+
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.filme-principal .btn-group .btn:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.filme-principal .btn-group .btn i {
+  margin-right: 8px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
